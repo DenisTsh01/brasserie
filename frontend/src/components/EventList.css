@@ -1,0 +1,99 @@
+body {
+    background: #161616;
+  }
+  .eventlist {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color:white
+   
+  }
+  .eventlist h2{
+    margin-left: 80px ! ;
+  }
+  .slick-dots{
+    
+    background-color: #161616;
+  }
+  .slick-slide > div {
+    margin-left: 5px;
+    color:#fff
+  }
+  .slick-list {
+   
+    color:#fff
+  }
+  
+  .card {
+    border: 1px solid #fff;
+    background: black;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 400px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+   
+
+  }
+  .card:hover {
+    transform: scale(0.97); /* Mărește card-ul la hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adaugă o umbră albă la hover */
+    transition: transform 0.1s ease, box-shadow 0.3s ease; /* Adaugă o tranziție pentru efectul de hover */
+    border-radius: 12px;
+}
+
+  
+  .card-top h1 {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
+  
+  .card-top > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: black;
+  }
+  
+  .card-bottom {
+    margin: 10px 20px;
+  }
+  
+  
+    .event-date {
+        
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.0rem;
+        margin-top: px;
+        margin-right: 10px;
+      }
+
+  .category {
+    position: relative;
+  }
+  
+  .category::before {
+    content: '';
+    background: rgb(255, 61, 61);
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+
+
+.slick-dots li button:before {
+  /* Schimbă culoarea punctelor în alb */
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  /* Schimbă culoarea punctului activ în alb sau o altă culoare dorită */
+  color: white; /* Asigură-te că punctul activ este vizibil */
+}

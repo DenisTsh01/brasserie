@@ -1,0 +1,85 @@
+.hero-container {
+    position: relative; /* Setează secțiunea hero ca relativă */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+  
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Setează videoclipul ca absolut, astfel încât să fie în fundalul secțiunii */
+    top: 0;
+    left: 0;
+  }
+
+
+  .hero-container h1{
+    font-family:'Times New Roman', Times, serif ;
+    z-index: 1;
+    color:aliceblue
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Asigură textul să nu se împartă pe mai multe linii */
+  }
+  
+  .fade-in-word {
+    display: inline-block;
+    opacity: 0; /* Inițial, cuvintele sunt invizibile */
+    font-family: 'Cursive', cursive;
+    animation: fade-in-animation 4s ease-in-out 1.5s forwards;
+  }
+  
+  @keyframes fade-in-animation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  @media screen and (max-width: 660px) {
+    .overlay-text {
+      display: block;
+      text-align: center;
+      margin: 0;
+     align-items: flex-start; 
+    }
+  
+    .fade-in-word {
+      display: block;
+      opacity: 0;
+      animation: fade-in-animation 4s ease-in-out 1.5s forwards;
+    }
+  }
+
+  .element{
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }

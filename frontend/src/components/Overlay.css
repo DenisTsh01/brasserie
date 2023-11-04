@@ -1,0 +1,79 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    perspective: 800px;
+  }
+  
+  
+  .overlay_background {
+    background: #4a4a4a;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adaugă un shadowbox subtil */
+    
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .overlay-content {
+    /* Stilurile pentru conținutul textului (aliniat la stânga) */
+    text-align: left; /* Aliniere la stânga a textului */
+  }
+  .overlay-content-text {
+    /* Stilurile pentru conținutul textului cu spații albe ca linii separate */
+    white-space: pre-line; /* Afișează spațiile albe ca linii separate */
+  }
+  .overlay-menu{
+    display: flex;
+    justify-content: left; /* Aliniere pe orizontală la centru */
+    align-items: center; 
+  }
+
+  
+  .overlay_close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.overlay_close:before {
+    content: '✕'; /* Adaugă un simbol "x" */
+    font-size: 30px;
+}
+
+.overlay_close:hover {
+    color: rgb(161, 226, 147); /* Schimbarea culorii la hover */
+}
+  .overlay-content {
+    color: #fff;
+    scrollbar-width: thin; /* Opțiune pentru dimensiunea barei de scroll (subțire) */
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.5); /* Culoarea barei de scroll și a mânerului */
+  }
+  .overlay-content::-webkit-scrollbar {
+    width: 10px; /* Lățimea barei de scroll (pentru browserele WebKit) */
+    background-color: rgba(0, 0, 0, 0.2); /* Culoarea de fundal a barei de scroll (transparentă) */
+  }
+  
+  .overlay-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Culoarea mânerului barei de scroll (transparentă) */
+    border-radius: 5px; /* Rotunjirea marginilor mânerului */
+  }
+  
+  .overlay-content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Culoarea mânerului la hover */
+  }
+  
