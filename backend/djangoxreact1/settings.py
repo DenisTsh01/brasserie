@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'C:/Users/toshd/DjangoxReact/brasserieProductie/brasserie/frontend/build',
+           
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -120,6 +120,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
-STATIC_ROOT = os.path.join(BASE_DIR,  'static')
+# STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
+# STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 # STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
