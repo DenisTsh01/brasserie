@@ -81,7 +81,7 @@ if (process.env.NODE_ENV === 'development') {
     setSodas(data2); 
   }
   async function getMinerals() {
-    let response = await fetch(`${serverUrl}/api/api/minerals/`);
+    let response = await fetch(`${serverUrl}/api/minerals/`);
     let data2 = await response.json();    
     console.log(data2)
     setMinerals(data2); 
