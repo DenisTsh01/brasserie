@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'djangoxreact1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('railway'),
-        'USER': os.environ.get('postgres'),
-        'PASSWORD': os.environ.get('F3Be-F43g3d5c4D1adDC2e2D-4DbBgFB'),
-        'HOST': os.environ.get('monorail.proxy.rlwy.net'),
-        'PORT': os.environ.get('37781'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ["PGDATABASE"],
+        'USER': os.environ["PGUSER"],
+        'PASSWORD': os.environ["PGPASSWORD"],
+        'HOST': os.environ["PGHOST"],
+        'PORT': os.environ["PGPORT"],
     }
 }
 
