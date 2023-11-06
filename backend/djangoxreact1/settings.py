@@ -129,6 +129,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
+CORS_ALLOWED_ORIGINS = [
+    "https://backend-production-dafc.up.railway.app/",  # Replace with the actual site's URL
+    "https://brasserie-production.up.railway.app/"
+]
 
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
