@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build',
+            'C:/Users/toshd/DjangoxReact/brasserieProductie/brasserie/frontend/build',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
