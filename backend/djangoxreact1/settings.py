@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-*8fd=8e(e_b=gt0q0p1#99qku@1j+&@9dvibs)+^@=6&47w5vr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['backend-production-dafc.up.railway.app','brasserie-production.up.railway.app','127.0.0.1']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
