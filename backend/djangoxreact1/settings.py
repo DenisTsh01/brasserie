@@ -137,9 +137,11 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",
     "https://brasserie-production.up.railway.app",
-    "https://localhost:8000","https://localhost:3000"
+    "https:///127.0.0.1:8000","https:///127.0.0.1:3000"
 ]
-STATIC_URL = '/static/'
-# STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
-# STATIC_ROOT = os.path.join(BASE_DIR,  'static')
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 # STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"

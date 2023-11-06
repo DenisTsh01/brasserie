@@ -116,8 +116,16 @@ function EventList() {
     }));
   };
 
+  let serverUrl;
+if (process.env.NODE_ENV === 'development') {
+  serverUrl = 'http://127.0.0.1:8000'; // URL-ul serverului local
+} else {
+  serverUrl = 'https://backend-production-dafc.up.railway.app/'; // URL-ul serverului live
+}
+
   async function getEvents() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app/api/events/');
+    console.log(serverUrl)
+    let response = await fetch(`${serverUrl}/api/events/`);
     let data = await response.json();
     setEvent(data);
     console.log("data photo   : " )
