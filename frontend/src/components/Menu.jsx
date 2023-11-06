@@ -16,7 +16,7 @@ let serverUrl;
 if (process.env.NODE_ENV === 'development') {
   serverUrl = 'http://localhost:8000'; // URL-ul serverului local
 } else {
-  serverUrl = 'https://backend-production-dafc.up.railway.app/'; // URL-ul serverului live
+  serverUrl = 'https://backend-production-dafc.up.railway.app'; // URL-ul serverului live
 }
 
 
