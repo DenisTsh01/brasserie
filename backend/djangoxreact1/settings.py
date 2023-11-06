@@ -132,12 +132,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CORS_ALLOWED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",  # Replace with the actual site's URL
     "https://brasserie-production.up.railway.app",
-    "https://localhost:8000"
+    "https://localhost:8000","https://localhost:3000"
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",
     "https://brasserie-production.up.railway.app",
-    "https://localhost:8000"
+    "https://localhost:8000","https://localhost:3000"
 ]
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
