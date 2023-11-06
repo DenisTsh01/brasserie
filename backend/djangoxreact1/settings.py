@@ -49,7 +49,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'djangoxreact1.urls'
 
@@ -133,7 +133,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",  # Replace with the actual site's URL
     "https://brasserie-production.up.railway.app"
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://backend-production-dafc.up.railway.app",
+    "https://brasserie-production.up.railway.app",
+]
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
 # STATIC_ROOT = os.path.join(BASE_DIR,  'static')
