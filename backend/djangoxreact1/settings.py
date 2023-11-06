@@ -129,10 +129,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-CORS_ALLOWED_ORIGINS = [
-    "https://backend-production-dafc.up.railway.app",  # Replace with the actual site's URL
-    "https://brasserie-production.up.railway.app",
-    "https://localhost:8000","https://localhost:3000"
+# CORS_ALLOWED_ORIGINS = [
+#     "https://backend-production-dafc.up.railway.app",  # Replace with the actual site's URL
+#     "https://brasserie-production.up.railway.app",
+#     "https://127.0.0.1:8000","https://127.0.0.1:3000"
+# ]
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',  # Adăugați originile pe care doriți să le permiteți
+    'https://backend-production-dafc.up.railway.app',
+    'https://brasserie-production.up.railway.app',
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",
