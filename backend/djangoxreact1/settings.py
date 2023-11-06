@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-*8fd=8e(e_b=gt0q0p1#99qku@1j+&@9dvibs)+^@=6&47w5vr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['backend-production-dafc.up.railway.app','brasserie-production.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['backend-production-dafc.up.railway.app','brasserie-production.up.railway.app','127.0.0.1','localhost']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -131,11 +131,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 CORS_ALLOWED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",  # Replace with the actual site's URL
-    "https://brasserie-production.up.railway.app"
+    "https://brasserie-production.up.railway.app",
+    "https://localhost:8000"
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",
     "https://brasserie-production.up.railway.app",
+    "https://localhost:8000"
 ]
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = ['C:/Users/toshd/DjangoxReact/reactFabi/brasserie/frontend/build/static']
