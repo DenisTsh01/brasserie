@@ -1,0 +1,6 @@
+{
+  "$schema": "https://schema.up.railway.app/railway.schema.json",
+  "deploy": {
+    "startCommand": "python manage.py migrate && gunicorn djangoxreact1.wsgi"
+  }
+}
