@@ -55,55 +55,55 @@ function Menu() {
   }, [drinking]);
 
   async function getBieresPression() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/bieres_pression/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/bieres_pression/');
     let data2 = await response.json();    
     console.log(data2)
     setDrinks(data2); 
   }
   async function getBieresBouteiless() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/bieres_bouteiless/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/bieres_bouteiless/');
     let data2 = await response.json();    
     console.log(data2)
     setBieresBouteiless(data2); 
   }
   async function getSodas() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/sodas/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/sodas/');
     let data2 = await response.json();    
     console.log(data2)
     setSodas(data2); 
   }
   async function getMinerals() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/minerals/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/minerals/');
     let data2 = await response.json();    
     console.log(data2)
     setMinerals(data2); 
   }
   async function getAlcools() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/alcools/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/alcools/');
     let data2 = await response.json();    
     console.log(data2)
     setAlcools(data2); 
   }
   async function getAperities() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/aperities/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/aperities/');
     let data2 = await response.json();    
     console.log(data2)
     setAperities(data2); 
   }
   async function getVins() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/vins/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/vins/');
     let data2 = await response.json();    
     console.log(data2)
     setVins(data2); 
   }
   async function getBoissonsChaudes() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/boissons_chaudes/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/boissons_chaudes/');
     let data2 = await response.json();    
     console.log(data2)
     setBoissonsChaudes(data2); 
   }
   async function getLiqueurs() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/liqueurs/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/liqueurs/');
     let data2 = await response.json();    
     console.log(data2)
     setLiqueus(data2); 
@@ -147,13 +147,13 @@ function Menu() {
   }
 
   async function getDessert() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/dessert/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/dessert/');
     let data = await response.json();
     setDesserts(data);
   }
 
   async function getEntree() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/entree/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/entree/');
     let data = await response.json();
     setEntree(data);
   
@@ -161,13 +161,13 @@ function Menu() {
   
 
   async function getPates() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/pates/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/pates/');
     let data = await response.json();
     setPates(data);
   }
 
   async function getPlat() {
-    let response = await fetch('https://backend-production-dafc.up.railway.app//api/plat/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/plat/');
     let data = await response.json();
     setPlat(data);
   }

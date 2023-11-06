@@ -117,7 +117,7 @@ function EventList() {
   };
 
   async function getEvents() {
-    let response = await fetch('/api/events/');
+    let response = await fetch('https://backend-production-dafc.up.railway.app/api/events/');
     let data = await response.json();
     setEvent(data);
     console.log("data photo   : " )
