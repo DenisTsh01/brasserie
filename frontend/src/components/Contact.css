@@ -1,0 +1,53 @@
+/* Stilizare pentru întreaga pagină de contact */
+.contact-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .program {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .program p {
+    margin: 0;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .contact-details h3 {
+    text-align: center;
+  }
+  
+  .contact-details a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .program {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
