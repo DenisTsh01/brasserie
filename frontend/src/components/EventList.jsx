@@ -158,7 +158,7 @@ function EventList() {
             <div className="card-container">
           <div className="card" key={item.title} onClick={() => handleCardClick(item)}>
             <div className="card-top">
-              <img src={item.photo ? item.photo : imgDefault} alt={item.title} onError={handleErrorImage} />
+              <img src={item.photo ? `/media/${item.photo}` : imgDefault} alt={item.title} onError={handleErrorImage} />
               <h1>{item.title}</h1>
             </div>
             <div className="card-bottom">
