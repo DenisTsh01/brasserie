@@ -13,6 +13,9 @@ function EventList() {
   const [events, setEvent] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+
+
   useEffect(() => {
     getEvents();
   }, []);
@@ -127,8 +130,12 @@ if (process.env.NODE_ENV === 'development') {
     console.log(serverUrl)
     let response = await fetch(`${serverUrl}/api/events/`);
     let data = await response.json();
+   
     setEvent(data);
-    console.log("data photo   : " )
+    const imageUrls = data.map(event => event.photo);
+    setImages(imageUrls);
+    
+    console.log("data photo   : " + data[0].photo )
 
   }
 
@@ -166,7 +173,7 @@ if (process.env.NODE_ENV === 'development') {
             <div className="card-container">
           <div className="card" key={item.title} onClick={() => handleCardClick(item)}>
             <div className="card-top">
-              <img src={item.photo ? `/media/${item.photo}` : imgDefault} alt={item.title} onError={handleErrorImage} />
+              <img src={item.photo ? `${serverUrl}${item.photo}` : imgDefault} alt={`${serverUrl}/${item.photo}`}  />
               <h1>{item.title}</h1>
             </div>
             <div className="card-bottom">
