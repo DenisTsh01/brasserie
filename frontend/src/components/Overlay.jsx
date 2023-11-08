@@ -2,7 +2,7 @@ import React from 'react';
 import './Overlay.css'; // Stilizare locală pentru Overlay
 
 
-function Overlay({ isOpen, onClose, children, menu }) {
+function Overlay({ isOpen, onClose, children, menu ,date}) {
     return (
       <>
         {isOpen ? (
@@ -15,7 +15,10 @@ function Overlay({ isOpen, onClose, children, menu }) {
               </div>
               <div className="overlay-content">{children}</div>
               <div className="overlay-menu">
-              <div className="overlay-content-text">{menu}</div></div>
+              <div className="overlay-content-text">{menu}</div>
+              <div className="overlay-content-text">{date}</div>
+
+              </div>
             </div>
           </div>
         ) : null}

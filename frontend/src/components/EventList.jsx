@@ -186,9 +186,10 @@ if (process.env.NODE_ENV === 'development') {
       </Slider>
 
       {selectedEvent && (
-        <Overlay isOpen={isOpen} onClose={handleCloseOverlay} menu={selectedEvent.menu}>
+        <Overlay isOpen={isOpen} onClose={handleCloseOverlay} menu={selectedEvent.menu} date={handleDate(selectedEvent.date)}>
           <h1>{selectedEvent.title}</h1>
           <p>{convertNewlinesToBr(selectedEvent.description)}</p>
+
         </Overlay>
       )}
     </div>

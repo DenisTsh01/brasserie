@@ -14,11 +14,11 @@
   
   
   .overlay_background {
-    background: #4a4a4a;
-    border-radius: 8px;
+    background: var(--light);
+    border-radius: 20px;
     padding: 20px;
-    width: 60%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adaugă un shadowbox subtil */
+    width: 80%;
+    box-shadow: 0 0 10px rgba(243, 242, 242, 0.5); /* Adaugă un shadowbox subtil */
     
     position: relative;
     max-height: 80vh;

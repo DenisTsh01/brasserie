@@ -27,7 +27,7 @@ body {
   
   .card {
     border: 1px solid #fff;
-    background: black;
+    background: var(--light);
     border-radius: 18px;
     overflow: hidden;
     height: 400px;
@@ -48,7 +48,7 @@ body {
 
   
   .card-top h1 {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     margin: 20px;
   }
   
@@ -61,11 +61,12 @@ body {
   
   .card-bottom {
     margin: 10px 20px;
+    font-size: 0.8rem;
   }
   
   
     .event-date {
-        
+        margin-top: 5px;
         display: flex;
         justify-content: flex-end;
         font-size: 1.0rem;
