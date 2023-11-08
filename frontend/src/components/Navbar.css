@@ -21,12 +21,15 @@
   .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    
+
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
     align-items: center;
+    margin-top: -20px;
+    margin-left: -50px;
   }
   
   .fa-typo3 {
@@ -40,7 +43,7 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 60vw;
+    width: 50vw;
     justify-content: end;
     margin-right: 2rem;
   }
@@ -74,10 +77,13 @@
   .menu-icon {
     display: none;
   }
-  
-  @media screen and (max-width: 960px) {
+ 
+
+  @media screen and (max-width: 1000px) {
     .NavbarItems {
       position: relative;
+      align-items: flex-start;
+      text-align: center;
     }
   
     .nav-menu {
@@ -90,6 +96,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      
     }
   
     .nav-menu.active {
@@ -98,6 +105,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+     
     }
   
     .nav-links {
@@ -114,20 +122,23 @@
     }
   
     .navbar-logo {
+      margin-top: 0px;
+      margin-left: 0px;
       position: absolute;
       top: -8px;
-      left:-80px;
+      left: -30px;
       transform: translate(25%, 50%);
     }
   
     .menu-icon {
       display: block;
       position: absolute;
-      top: 0;
+      top: -8px;
       right: 0;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+      color:white;
     }
   
     .fa-times {
@@ -148,6 +159,7 @@
       padding: 14px 20px;
       border: 1px solid #fff;
       transition: all 0.3s ease-out;
+      
     }
   
     .nav-links-mobile:hover {
