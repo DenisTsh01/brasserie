@@ -33,9 +33,15 @@ if (process.env.NODE_ENV === 'development') {
   const [entree, setEntree] = useState([]);
   const [pates, setPates] = useState([]);
   const [plat, setPlat] = useState([]);
- 
+  const [isPressed, setIsPressed] = useState(false);
   const [menuTitle, setMenuTitle] = useState('');
   const [selectedMenu, setSelectedMenu] = useState('Meal'); 
+
+  const handleButtonPress = () => {
+    // Implementează acțiunile dorite când butonul este apăsat
+    setIsPressed(!isPressed);
+  };
+
 
   useEffect(() => {
     // Apelează funcțiile pentru a obține datele
@@ -133,7 +139,7 @@ if (process.env.NODE_ENV === 'development') {
         const data = section[0];
         if (data != null) {
           const formattedDate = await getDate(data);
-          setMenuTitle(formattedDate);
+          setMenuTitle(` - ${formattedDate} -`);
           break;
         }
       }
@@ -223,10 +229,10 @@ if (process.env.NODE_ENV === 'development') {
 
      <div className="menu">
 
-       <h2>Menu - {menuTitle}</h2>
+       <h2>Menu {menuTitle} 11:30 - 14:30</h2>
        <div className='menu-item'>
          <span></span>
-         <div className='changer' onClick={handleMenuToggle}>
+         <div className={`changer ${isPressed ? 'pressed' : ''}`} onClick={handleMenuToggle}>
          Drinks Menu
        </div>
          </div>
@@ -277,7 +283,7 @@ if (process.env.NODE_ENV === 'development') {
        <h2 >Drinks</h2>
        <div className='menu-item'>
          <span></span>
-         <div className='changer' onClick={handleMenuToggle}>
+         <div className={`changer ${isPressed ? 'pressed' : ''}`} onClick={handleMenuToggle}>
          Meal Menu
        </div>
          </div>

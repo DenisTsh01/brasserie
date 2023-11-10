@@ -1,53 +1,131 @@
-/* Stilizare pentru întreaga pagină de contact */
-.contact-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
+.about-container {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.map-card {
+  flex: 1;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-right: 20px;
+  width: 200px ;
+}
+
+.program-and-contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.title-contact {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 25px;
+  color:white
+ 
+}
+
+.program-and-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aliniază textele pe mijloc pe dispozitivele mobile */
+  text-align: left; /* Textul să fie aliniat la stânga pe desktop */
+}
+
+.working-hours {
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.weekdays, .weekend {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  flex-wrap: wrap;
+}
+
+.weekdays p, .weekend p {
+  display: inline;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  margin-top: 20px;
+}
+
+.contact-info p {
+  color: #fff;
+}
+
+
+.facebook-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Aliniază orizontal elementele pe mijloc */
+  text-decoration: none;
+  color: #fff; /* Setăm culoarea textului la alb */
+}
+
+.f-icon {
+  margin-right: 5px; /* Adaugăm un spațiu mic între imagine și text */
+  transition: transform 0.3s, filter 0.3s; /* Efectele de tranziție pentru mărire și culoare */
+}
+
+.follow-text {
+  margin-top: 20px;
+  color: #fff;
+  transition: color 0.3s; /* Efect de tranziție pentru culoarea textului */
+}
+
+.facebook-link:hover .f-icon {
+  transform: scale(1.1); /* Mărim imaginea la hover */
+  filter: brightness(1.4); /* Mărim luminozitatea la hover */
+}
+
+.facebook-link:hover .follow-text:hover {
+  color: rgb(141, 173, 255); /* Schimbăm culoarea textului la hover */
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    flex-direction: column;
   }
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+  .map-card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 90%;
+    position: relative;
   }
-  
-  .main-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  .program-and-contact {
+    order: -1;
   }
-  
-  .program {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .program p {
-    margin: 0;
-  }
-  
+
+  .working-hours,
   .contact-info {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  
-  .contact-details h3 {
     text-align: center;
   }
-  
-  .contact-details a {
-    text-decoration: none;
-    color: #333;
+
+  .weekdays,
+  .weekend {
+    flex-direction: column;
   }
-  
-  @media (max-width: 600px) {
-    .program {
-      grid-template-columns: 1fr;
-    }
-  
-    .contact-info {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

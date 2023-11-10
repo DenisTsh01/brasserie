@@ -179,8 +179,20 @@
     outline: none;
   }
   
-  .changer:hover {
-    background-color: rgb(168, 219, 142);
-    transform: scale(1.05); /* Efectul de scalare la interacțiunea cu cursorul */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Umbră la interacțiune cu cursorul */
+  
+  .changer:active /*pe telefon press*/
+  {
+    background-color: rgb(152, 198, 128);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+
+  @media screen and (min-width: 780px) {  /*desktop hover*/
+    .changer:hover,
+    .changer.hovered {
+      background-color: rgb(152, 198, 128);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  

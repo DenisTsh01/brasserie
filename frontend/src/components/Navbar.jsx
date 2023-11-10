@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'; 
+import { ScrollSpy } from 'bootstrap';
+import { Link as ScrollLink } from 'react-scroll';
+import Scrollspy from 'react-scrollspy';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,41 +32,42 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <ScrollLink to='section0' spy={true} smooth={true} offset={-80} duration={500}  className='navbar-logo' onClick={closeMobileMenu}>
             {
             windowWidth < 350
               ? "Brasserie"
               : windowWidth < 550
-              ? "Caffe des Sports"
-              : "Brasserie Caffe des Sports"}
+              ? "Café des Sports"
+              : "Brasserie Café des Sports"}
            
-          </Link>
+          </ScrollLink>
           <div className='menu-icon' onClick={handleClick}>
             <FontAwesomeIcon icon={click ?    faXmark: faBars } />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <ScrollLink to='section1'  spy={true} smooth={true} offset={-180} duration={500} className='nav-links' onClick={closeMobileMenu}>
                Menu
-              </Link>
+              </ScrollLink>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/'
+              <ScrollLink
+                to='section2' 
+                spy={true} smooth={true} offset={-200} duration={500}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Events
-              </Link>
+                Événements
+              </ScrollLink>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/'
+              <ScrollLink
+                to='section3' spy={true} smooth={true} offset={-100} duration={500}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Contact
-              </Link>
+                Trouve nous
+              </ScrollLink>
             </li>
           </ul>
         </div>

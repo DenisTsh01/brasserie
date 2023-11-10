@@ -6,7 +6,8 @@ import './Home.css'
 // import Contact from '../components/Contact';
 import EventList from '../components/EventList';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
+import Contact from '../components/Contact'
 function Home() {
   return (
 
@@ -29,11 +30,10 @@ function Home() {
        <EventList />  
       </Element>
       
-      {/* <Element name="section3" className="element1">
+     <Element name="section3" className="element1">
        <Contact/>
       </Element>
-        */}
-      
+     
     </>
   );
 }
