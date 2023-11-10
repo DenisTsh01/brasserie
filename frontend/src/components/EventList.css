@@ -17,7 +17,9 @@ body {
     background-color: #161616;
   }
   .slick-slide > div {
+    margin-top: 20px;
     margin-left: 5px;
+    margin-right: 5px;
     color:#fff
   }
   .slick-list {
@@ -34,7 +36,7 @@ body {
     color: #fff;
     cursor: pointer;
     margin-bottom: 10px;
-    margin-right: 20px;
+    
 
    
 
@@ -66,11 +68,11 @@ body {
   
   
     .event-date {
-        margin-top: 5px;
+       
         display: flex;
         justify-content: flex-end;
         font-size: 1.0rem;
-        margin-top: px;
+        margin-bottom: auto;
         margin-right: 10px;
       }
 

@@ -16,7 +16,7 @@ function Overlay({ isOpen, onClose, children, menu ,date}) {
               <div className="overlay-content">{children}</div>
               <div className="overlay-menu">
               <div className="overlay-content-text">{menu}</div>
-              <div className="overlay-content-text">{date}</div>
+              <div className="overlay-content-text">Nous vous attendons le {date}</div>
 
               </div>
             </div>

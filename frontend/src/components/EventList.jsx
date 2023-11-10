@@ -140,8 +140,8 @@ if (process.env.NODE_ENV === 'development') {
   }
 
   const handleDescription = (text) => {
-    if (text.length > 45) {
-      return text.substring(0, 45) + '...';
+    if (text.length > 65) {
+      return text.substring(0, 65) + ' plus...';
     }
     return text;
   };
@@ -170,7 +170,7 @@ if (process.env.NODE_ENV === 'development') {
       <h2>Évènements à venir</h2>
       <Slider {...selectedSettings}>
         {events.map((item) => (
-            <div className="card-container">
+           
           <div className="card" key={item.title} onClick={() => handleCardClick(item)}>
             <div className="card-top">
               <img src={item.photo ? `${serverUrl}${item.photo}` : imgDefault} alt={`${serverUrl}/${item.photo}`}  />
@@ -181,7 +181,7 @@ if (process.env.NODE_ENV === 'development') {
             </div>
             <span className="event-date">{handleDate(item.date)}</span>
           </div>
-          </div>
+          
         ))}
       </Slider>
 
