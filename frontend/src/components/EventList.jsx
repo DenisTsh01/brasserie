@@ -184,7 +184,7 @@ if (process.env.NODE_ENV === 'development') {
           
         ))}
       </Slider>
-
+{/* okok */}
       {selectedEvent && (
         <Overlay isOpen={isOpen} onClose={handleCloseOverlay} menu={selectedEvent.menu} date={handleDate(selectedEvent.date)}>
           <h1>{selectedEvent.title}</h1>

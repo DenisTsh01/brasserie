@@ -9,7 +9,7 @@ urlpatterns = [
     # path('notes/create/', views.createNote, name="create-note"),
     path('notes/<str:pk>/update/', views.updateNote, name="update-note"),
     path('notes/<str:pk>/delete/', views.deleteNote, name="delete-note"),
-
+# ookokok
     path('menu/',views.getMenu, name="menu"),
     path('entree/',views.getEntree, name="entree"),
     path('pates/',views.getPates, name="pates"),
