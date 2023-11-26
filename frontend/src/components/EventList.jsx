@@ -130,12 +130,17 @@ if (process.env.NODE_ENV === 'development') {
     console.log(serverUrl)
     let response = await fetch(`${serverUrl}/api/events/`);
     let data = await response.json();
-   
+
+    console.log('events' + data)
+    if (data === null || data.length === 0)
+    data = [{ title: "Évènements à venir", description: "No upcoming events", date: new Date()}];
+
     setEvent(data);
     const imageUrls = data.map(event => event.photo);
     setImages(imageUrls);
     
-    console.log("data photo   : " + data[0].photo )
+   
+  console.log(data)
 
   }
 
