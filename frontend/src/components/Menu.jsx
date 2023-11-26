@@ -139,7 +139,7 @@ if (process.env.NODE_ENV === 'development') {
         const data = section[0];
         if (data != null) {
           const formattedDate = await getDate(data);
-          setMenuTitle(` - ${formattedDate} -`);
+          setMenuTitle(` - ${formattedDate}`);
           break;
         }
       }
@@ -229,7 +229,7 @@ if (process.env.NODE_ENV === 'development') {
 
      <div className="menu">
 
-       <h2>Menu {menuTitle} 11:30 - 14:30</h2>
+       <h2><b>Menu {menuTitle}</b> 11:30 - 14:30</h2>
        <div className='menu-item'>
          <span></span>
          <div className={`changer ${isPressed ? 'pressed' : ''}`} onClick={handleMenuToggle}>

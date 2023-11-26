@@ -95,7 +95,7 @@
     flex-grow: 1;
     color : var(--primary);
    font-size: 24px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: sans-serif
   }
   
   .mains-description {
