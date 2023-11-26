@@ -229,7 +229,7 @@ if (process.env.NODE_ENV === 'development') {
 
      <div className="menu">
 
-       <h2><b>Menu {menuTitle}</b> <span className='hour'>11:30 - 14:30</span></h2>
+       <h2><b>Menu {menuTitle}</b> <br/><span className='hour'>11:30 - 14:30</span></h2>
        <div className='menu-item'>
          <span></span>
          <div className={`changer ${isPressed ? 'pressed' : ''}`} onClick={handleMenuToggle}>
