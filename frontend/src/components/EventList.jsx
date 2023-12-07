@@ -123,7 +123,7 @@ function EventList() {
 if (process.env.NODE_ENV === 'development') {
   serverUrl = 'http://127.0.0.1:8000'; // URL-ul serverului local
 } else {
-  serverUrl = 'https://brasseriecafedessports.com'; // URL-ul serverului live
+  serverUrl = 'https://backend-production-dafc.up.railway.app'; // URL-ul serverului live
 }
 
   async function getEvents() {
