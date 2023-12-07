@@ -139,11 +139,13 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',  # Adăugați originile pe care doriți să le permiteți
     'https://backend-production-dafc.up.railway.app',
     'https://brasserie-production.up.railway.app',
+    'https://brasseriecafedessports.com'
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-production-dafc.up.railway.app",
     "https://brasserie-production.up.railway.app",
-    "https:///127.0.0.1:8000","https:///127.0.0.1:3000"
+    "https:///127.0.0.1:8000","https:///127.0.0.1:3000",
+    "https://brasseriecafedessports.com"
 ]
 
 STATIC_URL = 'static/'
